@@ -1,0 +1,17 @@
+# Core Libraries
+pandas==2.1.4
+numpy==1.26.3
+scikit-learn==1.3.2
+
+# Data Visualization (Optional)
+matplotlib==3.8.2
+seaborn==0.12.2
+
+# Machine Learning
+scipy==1.11.4
+
+# Deep Learning (Use only TensorFlow, no separate Keras)
+# tensorflow>=2.12,<2.20  # Automatically includes Keras
+
+# Miscellaneous
+joblib==1.3.2
