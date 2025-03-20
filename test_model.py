@@ -7,7 +7,7 @@ model = tf.keras.models.load_model("models/Hybrid_GRU_LSTM_Model.h5")
 
 # Step 2: Define New Sample Data for Testing
 # Format: [pH, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic Carbon, Trihalomethanes, Turbidity]
-test_sample = np.array([[8.5, 150, 2000, 6.9, 350, 400, 15, 60, 3]], dtype=np.float32)  # Example input values
+test_sample = np.array([[0,0,0,0,0,0,0,0,0]], dtype=np.float32)  # Example input values
 
 # Step 3: Normalize Data Using Training Set Scaling
 X_train = pd.read_csv("outputs/X_train.csv")
