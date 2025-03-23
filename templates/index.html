@@ -11,6 +11,7 @@
         input { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
         button { background: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
         .result { margin-top: 20px; font-size: 20px; font-weight: bold; }
+        .graph { margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -31,6 +32,15 @@
 
     {% if prediction %}
         <p class="result">Prediction: {{ prediction }}</p>
+        <p class="result">Probability: {{ probability }}%</p>
+        <p class="result">Model Accuracy: {{ accuracy }}%</p>
+
+        {% if graph_url %}
+            <div class="graph">
+                <h3>Prediction Probability</h3>
+                <img src="{{ graph_url }}" alt="Prediction Graph" width="300">
+            </div>
+        {% endif %}
     {% endif %}
 
 </body>

@@ -1,13 +1,3 @@
-""" Splitting Data for Training & Testing
-What is Data Splitting?
-Data splitting means dividing our dataset into two parts:
-
-Training Data (80%) → Used by the machine learning model to learn patterns.
-Testing Data (20%) → Used to evaluate how well the model performs on unseen data.
-Why is Splitting Important?
-If we train the model on all data, it remembers everything and does not generalize well to new data (this is called overfitting).
-If we test the model on trained data, it will give 100% accuracy but will fail on real-world data."""
-
 import pandas as pd
 from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import train_test_split
@@ -55,7 +45,6 @@ pd.DataFrame(y_train).to_csv("outputs/y_train.csv", index=False)
 pd.DataFrame(y_test).to_csv("outputs/y_test.csv", index=False)
 
 print("\n✅ Balanced & Normalized training & testing data saved in 'outputs' folder!")
-
 
 
 
